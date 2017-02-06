@@ -284,7 +284,34 @@ function compare(a,b) {
 
 function expose()
 {
-	alert("TODO: need to implement this");
+	let rectangles = win_obj.map(window => {
+		return {x: window.x, y: window.y, w: window.w, h: window.h, window: window};
+	}).sort((r1, r2) => r1.h - r2.h);
+	let w = 1000;
+	let h = 800;
+
+	let remaining = w;
+	let y = 0;
+	let shelfHeight = 0;
+
+	let placed = rectangles.map(rectangle => {
+		if (rectangle.w > remaining) {
+			y += shelfHeight;
+			shelfHeight = 0;
+			remaining = w;
+		}
+
+		let output = {x: w - remaining, y: y, w: rectangle.w, h: rectangle.h, window: rectangle.window};
+		remaining -= rectangle.w;
+		shelfHeight = Math.max(shelfHeight, rectangle.h);
+		return output;
+	});
+
+	for (let rect of placed) {
+		rect.window.x = rect.x;
+		rect.window.y = rect.y;
+		rect.window.updateStyle();
+	}
 }
 
 //TODO: move this back to serverside only
