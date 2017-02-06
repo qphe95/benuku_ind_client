@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	right: 0px;
+	height: 30px;
+	background-color: grey;
+	display: flex;
+}
+
+#sidebar{
+	position: absolute;
+	left: -300px;
+	top: 30px;
+	width: 300px;
+	bottom: 0px;
+	background-color: pink;
+	overflow: scroll;
+}
+
+.sidebar-elem {
+	height: 500px;
+	background-color: green;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.heading-icon {
+	line-height: 22px;
+	margin: auto;
+	padding: 2px;
+	margin-right:20px;
+	margin-left: 0px;
+	font-size: 18px;
+	color: white;
+	font-family: helvetica;
+	border: 1px solid;
+}
+
+.console {
+	/*background-color: pink;*/
+	background-color: black;
+	line-height: 1em;
+	color: #fff;
+	font-family: monospace;
+	white-space: pre-wrap;
+	position: absolute;
+	top: 20px;
+	bottom: 10px;
+	right: 10px;
+	left: 0px;
+	overflow: scroll;
+}
+
+.terminal-cursor {
+    color: #000;
+    background: #f0f0f0;
+  }
+
+.console ul {
+	margin: 0px;
+}
+
+#open-sessions {
+	cursor: pointer;
+	height:30px; 
+	width:30px; 
+	margin:auto; 
+	margin-left: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: grey;
+}
+
+.heading-icon:hover
+{
+	color: grey;
+	background-color: white;
+	cursor: pointer;
+}
+
+#container {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	right: 0px;
+	bottom: 0px;
+	/*background-color: grey;*/
+}
+
+.window0 {
+	position: absolute;
+	background-color: grey;
+	box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 20px;
+	min-height: 25px;
+	min-width: 25px;
+}
+
+.close {
+	position: absolute;
+	background-image: url('/close-button.png');
+	top: 4px;
+	left: 4px;
+	height: 12px;
+	width: 12px;
+	cursor: pointer;
+}
+
+.title {
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	right: 4px;
+	left: 20px;
+	line-height: 12px;
+}
+
+.grip {
+	position: absolute;
+	background-color: red;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 20px;
+	cursor: -moz-grab; cursor: -webkit-grab; cursor: grab;
+	/*cursor: move;*/
+}
+
+.bar {
+	position: absolute;
+	background-image: url('uiresizer.png');
+	background-repeat: no-repeat;
+	right: 0px;
+	bottom: 0px;
+	height: 10px;
+	width: 10px;
+	cursor: se-resize;
+}
+
+.ace-heading
+{
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    height: 20px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+
+.ace {
+	position: absolute;
+	top: 20px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.rest0 {
+	position: absolute;
+	top: 20px;
+	bottom: 10px;
+	right: 10px;
+	left: 0px;
+	background-color: orange;
+}

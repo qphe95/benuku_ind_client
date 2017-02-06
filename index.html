@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<title>Drag and Resize Demo</title>
+<link rel="stylesheet" href="index.css">
+<script src="/jquery-2.2.4.js"></script>
+<script src="/term.js"></script>
+<script src="/ace-builds/src-noconflict/ace.js"></script>
+<script src="/ace-builds/src-noconflict/ext-modelist.js"></script>
+<script src="/index.js"></script>
+</head>
+
+<body>
+<div id="heading">
+	<img id="open-sessions" src="/menu-button-of-three-lines.png"></img>
+	<div class="heading-icon" onclick="expose();">Exposé</div>
+	<div class="heading-icon" onclick="new_window('terminal');">Terminal</div>
+	<div class="heading-icon" onclick="new_window('ace');">Text Editor</div>
+</div>
+<div id="sidebar">
+	<div class="sidebar-elem"></div>
+	<div class="sidebar-elem"></div>
+	<div class="sidebar-elem"></div>
+</div>
+<div id="container">
+</div>
+</body>
+
+</html>
